@@ -10,6 +10,7 @@ const typesDir = path.resolve(__dirname, '../types')
 // walk through the temp dts dir, find all import/export of types/*
 // and rewrite them into relative imports - so that api-extractor actually
 // includes them in the rolled-up final d.ts file.
+// walkDir???
 walkDir(tempDir)
 console.log(chalk.green.bold(`patched types/* imports`))
 
